@@ -3,14 +3,27 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Javascript projects</title>
+    <title>Ajax request type</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
     <h1>Vanilla Javascript project 2023</h1>
-    <p>All rights reserved for practice purpose</p>
+    
+    <h2>ajax request type</h2>
+    <p>Created by shabbir, 2023 project list</p>
+    <a href="">github link</a>
 
-    <p>Check each branch for individual projects</p>
+
+    <script>
+        async function getData() {
+            const api = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+            const res = await fetch(api);
+            const json = await res.json();
+
+            console.log(json);
+        }
+        getData();
+    </script>
 </body>
 </html>

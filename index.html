@@ -8,22 +8,20 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <h1>Vanilla Javascript project 2023</h1>
-    
-    <h2>ajax request type</h2>
-    <p>Created by shabbir, 2023 project list</p>
-    <a href="">github link</a>
+    <div class="container">
+        <h1>Vanilla Javascript project 2023</h1>
+        <h2>Ajax Request Type</h2>
+        <p>Created by shabbir, 2023 project list <a href="">github link</a></p>
+    </div>
+    <div class="input">
+        <form>
+            <input type="text" class="search" placeholder="City OR State">
+        </form>
 
+        <ul class="suggetion">
+        </ul>
+    </div>
 
-    <script>
-        async function getData() {
-            const api = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
-            const res = await fetch(api);
-            const json = await res.json();
-
-            console.log(json);
-        }
-        getData();
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
